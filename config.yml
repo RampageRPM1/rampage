@@ -1,27 +1,94 @@
+# Rampage Testnet Configuration v1.5.1
+# Chain: rampage-testnet-1 | Denom: urpm | Bech32: rampage
+# Per CHAIN-SPEC-v1.5.1 — supersedes all Ignite scaffold defaults
 version: 1
 validation: sovereign
-default_denom: stake
-accounts: 
-- name: alice
-  coins:
-  - 20000token
-  - 200000000stake
-- name: bob
-  coins:
-  - 10000token
-  - 100000000stake
+default_denom: urpm
+
+accounts:
+  # Genesis validator and Truth Bearer accounts
+  - name: validator1
+    coins:
+      - 100000000000urpm   # 100,000 RPM — standard Truth Bearer minimum
+  - name: validator2
+    coins:
+      - 200000000000urpm   # 200,000 RPM
+  - name: validator3
+    coins:
+      - 100000000000urpm   # 100,000 RPM
+  # Treasury accounts
+  - name: truth_reserve
+    coins:
+      - 10500000000000urpm # 10,500,000 RPM — 50% Truth Verification Reserve
+  - name: legal_defense_fund
+    coins:
+      - 1050000000000urpm  # 1,050,000 RPM — 5% Legal Defense Fund (ring-fenced)
+  - name: ecosystem_fund
+    coins:
+      - 4200000000000urpm  # 4,200,000 RPM — 20% Ecosystem/Developer Fund
+  - name: community_airdrop
+    coins:
+      - 2100000000000urpm  # 2,100,000 RPM — 10% Community Airdrop
+  - name: humanitarian_reserve
+    coins:
+      - 1050000000000urpm  # 1,050,000 RPM — 5% Humanitarian Access Reserve
+  - name: founders_vesting
+    coins:
+      - 2100000000000urpm  # 2,100,000 RPM — 10% Founders (2yr vest, 6mo cliff)
+
 client:
   openapi:
     path: docs/static/openapi.json
+
 faucet:
-  name: bob
+  name: truth_reserve
   coins:
-  - 5token
-  - 100000stake
+    - 1000000urpm     # 1 RPM per faucet request (testnet)
+
 validators:
-- name: alice
-  bonded: 100000000stake
-- name: validator1
-  bonded: 200000000stake
-- name: validator2
-  bonded: 100000000stake
+  - name: validator1
+    bonded: 100000000000urpm   # 100,000 RPM
+  - name: validator2
+    bonded: 200000000000urpm   # 200,000 RPM
+  - name: validator3
+    bonded: 100000000000urpm   # 100,000 RPM
+
+genesis:
+  chain_id: rampage-testnet-1
+  app_state:
+    gov:
+      params:
+        voting_period: "604800s"        # 7 days standard
+        min_deposit:
+          - denom: urpm
+            amount: "1000000000"        # 1,000 RPM
+        quorum: "0.51"                  # 51% standard quorum
+        threshold: "0.67"               # 67% standard approval
+        veto_threshold: "0.334"
+    staking:
+      params:
+        bond_denom: urpm
+        max_validators: 21
+        unbonding_time: "1814400s"      # 21 days
+    slashing:
+      params:
+        slash_fraction_double_sign: "0.05"
+        slash_fraction_downtime: "0.01"
+        downtime_jail_duration: "600s"  # 10 minutes
+    mempoolshield:
+      params:
+        enabled: true
+        threat_level: 1
+        oracle_threshold: 5
+        oracle_signers: 7
+        failsafe_default: LOCKDOWN_CAPITAL_ONLY
+    governor955:
+      params:
+        truth_verification_target: "0.95"
+        humanitarian_target: "0.05"
+        review_trigger_months: 18
+    attestation:
+      params:
+        min_oracle_signatures: 5
+        max_oracle_nodes: 7
+        require_jurisdiction_flag: false
