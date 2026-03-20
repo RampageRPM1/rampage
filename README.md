@@ -117,7 +117,8 @@ make test
 
 | Document | Description |
 |----------|-------------|
-| [docs/CHAIN-SPEC-v1.5.md](docs/) | Full chain specification including architecture, consensus parameters, validator economics, and governance constitution |
+| [Whitepaper-v1.5.2.md](docs/Whitepaper-v1.5.2.md) | Rampage L1 Technical Whitepaper — authoritative architecture and governance specification |
+ | [docs/CHAIN-SPEC-v1.5.md](docs/) | Full chain specification including architecture, consensus parameters, validator economics, and governance constitution |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute to Rampage L1 |
 | [SECURITY.md](SECURITY.md) | Security policy and vulnerability reporting |
 | [CHANGELOG.md](CHANGELOG.md) | Version history and roadmap |
