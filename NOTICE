@@ -1,0 +1,114 @@
+Rampage L1 — Censorship-Resistant Truth Engine
+Copyright 2025 Shea Patrick Kastl
+All rights reserved under the terms of the Apache License, Version 2.0.
+
+================================================================================
+AUTHORSHIP
+================================================================================
+
+This software was conceived, designed, architected, and authored by:
+
+    Shea Patrick Kastl
+    Original Author and Sole Copyright Holder
+    Established: 2025
+
+The Rampage L1 protocol, its constitutional governance architecture, the
+Seven-Seal oracle verification system design, the 955 Operational Governor
+framework, the Mempool Shield compliance membrane concept, and the RPM token
+economics were originated by Shea Patrick Kastl and are documented in the
+Rampage Constitution v1.5 and Rampage Whitepaper v1.5.1, the authorship
+and timestamps of which are established by the commit history of this
+repository and prior private documentation.
+
+================================================================================
+TRADEMARK NOTICE
+================================================================================
+
+The following names, marks, and identifiers are the exclusive trademarks,
+service marks, and trade names of Shea Patrick Kastl. This Apache License
+DOES NOT grant any rights to use these marks. Use of any of the following
+requires express written permission from the copyright holder:
+
+    RAMPAGE
+    RAMPAGE L1
+    RPM (as a cryptocurrency token identifier for this project)
+    TRUTHORACLE
+    TRUTHORACLE.AI
+    SEVEN-SEAL
+    SEVEN-SEAL VERIFICATION
+    THE RAMPAGE CONSTITUTION
+
+Any fork or derivative work of this codebase MUST:
+  (1) Remove all of the above marks from its branding, documentation,
+      and user interfaces;
+  (2) Clearly state that it is a derivative work and NOT the original
+      Rampage L1 protocol;
+  (3) Not use any name or mark likely to cause confusion with the
+      original Rampage project.
+
+================================================================================
+PROPRIETARY PLATFORM NOTICE
+================================================================================
+
+The following components are proprietary and are NOT covered by this
+Apache License. They are NOT included in this repository and remain the
+exclusive intellectual property of Shea Patrick Kastl:
+
+  - The TruthOracle.ai website, platform, and web application
+    (https://truthoracle.ai)
+  - The Seven-Seal off-chain oracle engine implementation and its
+    AI model orchestration logic
+  - The TruthOracle.ai verification dashboard and user interface
+  - All proprietary API integrations, backend infrastructure, and
+    server-side components of the TruthOracle.ai platform
+  - The Rampage Constitution v1.5 and Rampage Whitepaper v1.5.1
+    as literary works (separately licensed under CC BY-ND 4.0)
+
+The open-source code in this repository provides the on-chain protocol
+interface for the Seven-Seal system. The off-chain oracle implementation
+and the TruthOracle.ai platform that powers it are distinct, proprietary
+works that operate independently of this license.
+
+================================================================================
+THIRD-PARTY COMPONENTS
+================================================================================
+
+This software builds upon the following open-source foundations:
+
+  - Cosmos SDK (Apache License 2.0)
+    Copyright The Cosmos SDK Authors
+    https://github.com/cosmos/cosmos-sdk
+
+  - CometBFT (Apache License 2.0)
+    Copyright The CometBFT Authors
+    https://github.com/cometbft/cometbft
+
+  - IBC-Go (Apache License 2.0)
+    Copyright The IBC-Go Authors
+    https://github.com/cosmos/ibc-go
+
+  - Ignite CLI (Apache License 2.0)
+    Copyright Ignite
+    https://github.com/ignite/cli
+
+The use of these components does not imply endorsement of the Rampage
+project by their respective authors.
+
+================================================================================
+NOTICE TO DISTRIBUTORS AND DERIVATIVE WORKS
+================================================================================
+
+If you distribute this Work or any Derivative Work, you must:
+
+  1. Include a copy of this NOTICE file in your distribution.
+  2. Include a copy of the LICENSE file (Apache 2.0) in your distribution.
+  3. Clearly identify all modifications made to the original Work.
+  4. Remove or replace all trademark references per the Trademark Notice
+     above.
+  5. Not represent your derivative work as the original Rampage L1 protocol
+     or imply affiliation with Shea Patrick Kastl or the Rampage project
+     without express written permission.
+
+For licensing inquiries, partnership requests, or permissions beyond the
+scope of the Apache License, contact the copyright holder through the
+official Rampage project channels at https://truthoracle.ai
