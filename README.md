@@ -60,8 +60,9 @@ The `x/governor` module is Rampage's proprietary governance innovation. Unlike s
 | Core chain scaffold | Complete |
 | x/governor module | Complete |
 | Protobuf definitions | Complete |
-| Chain specification v1.5 | Complete |
+| Chain specification v1.5.1 | Complete |
 | IBC integration | Complete |
+| Tokenomics design | Complete |
 | Testnet genesis configuration | In Progress |
 | Block explorer integration | Planned |
 | Public testnet launch | Planned |
@@ -117,9 +118,11 @@ make test
 
 | Document | Description |
 |----------|-------------|
-| [Whitepaper-v1.5.2.md](docs/Whitepaper-v1.5.2.md) | Rampage L1 Technical Whitepaper — authoritative architecture and governance specification |
- | [docs/CHAIN-SPEC-v1.5.md](docs/) | Full chain specification including architecture, consensus parameters, validator economics, and governance constitution |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute to Rampage L1 |
+| [Whitepaper v1.5.2](docs/Whitepaper-v1.5.2.md) | Rampage L1 Technical Whitepaper — authoritative architecture and vision |
+| [Chain Specification v1.5.1](docs/CHAIN-SPEC-v1.5.1.md) | Full chain spec: consensus parameters, validator economics, governance constitution |
+| [Tokenomics](docs/TOKENOMICS.md) | RPM token design, inflation model, staking economics, fee structure, community pool |
+| [Validator Guide](docs/VALIDATOR-GUIDE.md) | How to run a Rampage L1 validator node |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contributor guidelines including IP notice and CLA |
 | [SECURITY.md](SECURITY.md) | Security policy and vulnerability reporting |
 | [CHANGELOG.md](CHANGELOG.md) | Version history and roadmap |
 | [NOTICE](NOTICE) | Copyright and trademark information |
