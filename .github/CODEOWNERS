@@ -1,0 +1,22 @@
+# Code owners for Rampage L1
+# These owners are automatically requested for review on PRs that touch
+# the matching paths. Pairs with the 'Protect main' branch ruleset.
+
+# Default owner for everything in the repo
+*                   @RampageRPM1
+
+# Consensus / state-machine code — highest sensitivity
+/app/               @RampageRPM1
+/cmd/               @RampageRPM1
+/x/                 @RampageRPM1
+/proto/             @RampageRPM1
+
+# Chain identity, genesis, and economic parameters
+/config.yml         @RampageRPM1
+/docs/CHAIN-SPEC-v1.5.1.md   @RampageRPM1
+/docs/TOKENOMICS.md          @RampageRPM1
+/docs/static/       @RampageRPM1
+
+# Validator-facing operational docs
+/docs/VALIDATOR-GUIDE.md     @RampageRPM1
+/docs/testnet/      @RampageRPM1
