@@ -2,6 +2,21 @@
 
 > **A comprehensive guide for running a Rampage L1 validator node on the testnet.**
 
+> ## ⚠️ TESTNET NOT YET LIVE
+>
+> **`rampage-testnet-1` has not launched yet.** As of this writing the public
+> genesis has not been published and there are no live seed/RPC endpoints.
+>
+> - **Do not** attempt to sync a node yet — `docs/static/genesis.json` is not
+>   yet available and the seed addresses below are placeholders.
+> - Genesis will be generated on a clean host per
+>   [`docs/testnet/01-GENESIS-BUILD.md`](./testnet/01-GENESIS-BUILD.md) and
+>   published with a SHA256 checksum.
+> - Canonical identity: chain-id `rampage-testnet-1`, denom `urpm`, Bech32
+>   prefix `rampage`, binary `rampaged`.
+> - This banner will be removed once genesis, seeds, and a state-sync RPC are
+>   published. Watch this file for the go-live update.
+
 ---
 
 ## Table of Contents
